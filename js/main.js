@@ -20,7 +20,7 @@ console.log(fish.name);
 	// Typing of the header function
 
 	$("#typed").typed({
-    strings: ["Welcome to DSGIN", "Work with a designer", "Your clothes, your style", "DSGIN"],
+    strings: ["Welcome To DSGIN", "Work With A Designer", "To create Your Clothes", "Your Style", "DSGIN"],
     typeSpeed: 80,
     startDelay: 0,
     backSpeed: 10,
