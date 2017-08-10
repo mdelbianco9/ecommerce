@@ -1,0 +1,35 @@
+
+/*Navigation Bar*/
+
+.navbar-flat { background: none; margin-bottom: 0px;}
+.navbar-flat .navbar-collapse { text-align: center; }
+.navbar-flat ul { float: none; }
+.navbar-flat li { display: inline-block; float: none; margin-left: 1%; margin-right: 1%;}
+.navbar-flat li a:hover { background: #c12728; color: white; }
+.navbar-flat li a:focus { background: #c12728; color: white; }
+.navbar-flat li.active a { background: #c12728; color: white; }
+.navbar-flat a { font-family: "Lato", sans-serif; font-weight: 700; color: #c89a99; -webkit-transition: all 0.3s ease-in, 1s; -moz-transition: all 0.3s ease-in, 1s; -o-transition: all 0.3s ease-in, 1s; -ms-transition: all 0.3s ease-in, 1s; transition: all 0.3s ease-in, 1s; }
+.navbar-header a {border: 1px solid black; color: black; font-family: "Lato", sans-serif; }
+.navbar-header a:hover {background: #c12728; color: white;}
+
+/*Header*/
+
+/*Sets the background image for the header*/
+.background {
+	height: 390px;
+	background: url(../img/hanger.jpg)
+}
+
+/*Positions the writing insode the header area, infront of the background*/
+.header_content {
+	position: absolute;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -20%);
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
