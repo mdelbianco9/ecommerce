@@ -12,16 +12,20 @@
 .navbar-header a:hover {background: #c12728; color: white;}
 
 /*Header*/
+#home {
+	/*keeps the head on page*/
+	position: fixed;
+	width: 100%;
+}
 
 /*Sets the background image for the header*/
 .background {
 	margin-top: 4%;
 	height: 390px;
 	background: url(../img/hanger.jpg)
-	
 }
 
-/*Positions the writing insode the header area, infront of the background*/
+/*Positions the writing inside the header area, infront of the background*/
 .header_content {
 	position: absolute;
     z-index: 3;
@@ -37,13 +41,13 @@
 /*SEX Section*/
 /*---------------------------*/
 #sex {
-	/*height: 250px;*/
-	/*border: 1px solid black;*/
 	background: transparent;
-	/*scroll-behavior: unset;*/
+	
 }
 
 .sex-holder {
+	margin-top: 45%;
+	margin-bottom: 10%;
 	height: 250px;
 	/*border: 1px solid green;*/
 	text-align: center;
@@ -58,7 +62,7 @@
 	width: 30%;
 	height: 75%;
 	margin-top: 2%;
-	margin-right: 1%
+	margin-right: 10%
 }
 
 .men:hover {
@@ -85,7 +89,7 @@ h2 {
 }
 
 .women:hover {
-	box-shadow: 1px 1px 5px 5px grey;
+	box-shadow: 1px 1px 5px 5px lightgrey;
 }
 
 /*SHIRTS Section*/
@@ -96,7 +100,7 @@ h2 {
 	border: 1px solid grey;
 	border-radius: 5px;
 	display: inline-block;
-	width: 30%;
+	width: 22%;
 	text-align: center;
 	margin-left: 2%;
 	margin-right: 1%;
@@ -106,7 +110,9 @@ h2 {
 
 
 #shirts {
+	text-align: center;
 	height: 500px;
+	background-color: white;
 }
 
 /*Tag box with name an dprice*/
@@ -119,12 +125,16 @@ h2 {
 	text-align: left;
 }
 
+.tag_div:hover {
+	background-color: #94211f;
+}
+
 /*Wording inside tag box*/
 .tags {
 	display: inline-block;
 	margin-top: 8%;
 	margin-bottom: 8%;
-	margin-right: 20%;
+	margin-right: 15%;
 	margin-left: 8%;
 	font-family: "Lato", sans-serif;
 	color: white;

@@ -6,7 +6,7 @@
 	// Typing of the header function
 
 	$("#typed").typed({
-    strings: ["Welcome To DSGIN", "Work With A Designer", "To Create Your Clothing", "Your Style", "DSGIN"],
+    strings: ["Welcome To DSGIN", "Work With A Designer", "To Create Your Clothing", "Your Style", "DSGIN", ":-)"],
     typeSpeed: 80,
     startDelay: 0,
     backSpeed: 5,
@@ -35,7 +35,7 @@ function shirts(image, name, price) {
 var shirt1 = new shirts("img/shirt1.jpg", "Rustic Tie Dye", "$35")
 var shirt2 = new shirts("img/shirt2.jpg", "Peace", "$24")
 var shirt3 = new shirts("img/shirt3.jpg", "Neverland", "$15")
-var shirt4 = new shirts("img/shirt3.jpg", "Neverland", "$15")
+var shirt4 = new shirts("img/shirt4.jpeg", "Neverland", "$15")
 
 // Putting each object into an array
 var shirt_array = [shirt1, shirt2, shirt3, shirt4];
@@ -44,7 +44,7 @@ var shirt_array = [shirt1, shirt2, shirt3, shirt4];
 for (var i = 0; i < shirt_array.length; i++) {
 	// This a div for the objects info
 	var box = document.createElement('div');
-	box.className = 'object_box col-md-3 col-sm-3';
+	box.className = 'object_box col-md-4 col-sm-3';
 
 	// Puts the image into the box 
 	var img = document.createElement('IMG');
@@ -75,18 +75,68 @@ for (var i = 0; i < shirt_array.length; i++) {
 	tag_div.appendChild(pricebox);
 	pricebox.appendChild(pricetext);
 
-
-
-
-
-
-
 	// Puts the div of objects onto the page inside div id=shirts
 	shirtid = document.getElementById('shirts');
 	shirtid.appendChild(box);
-	
-}
+};
 
+// --------------------------------PANTS-----------------------------------------------------
+// Creating objects to sell
+function pants(image, name, price) {
+	this.image = image;
+	this.name = name;
+	this.price = price;
+};
+
+// Storing each object as a variable
+var pants1 = new pants("img/pants1.jpg", "Comfy", "$21")
+var pants2 = new pants("img/pants2.jpeg", "Tru Blu", "$28")
+var pants3 = new pants("img/pants3.jpg", "Whightey", "$40")
+var pants4 = new pants("img/pants4.jpg", "Crashers", "$30")
+var pants5 = new pants("img/pants5.jpg", "Loser", "$20")
+
+// Putting each object into an array
+var pants_array = [pants1, pants2, pants3, pants4, pants5];
+
+// Function to put objects on to the screen
+for (var i = 0; i < pants_array.length; i++) {
+	// This a div for the objects info
+	var box1 = document.createElement('div');
+	box1.className = 'object_box col-md-4 col-sm-3';
+
+	// Puts the image into the box 
+	var img1 = document.createElement('IMG');
+	img1.setAttribute('src', pants_array[i].image)
+	img1.className = 'img';
+	img1.height = '350';
+	img1.width = '325'
+	box1.appendChild(img1);
+
+	// Creates div for the price and name properties
+	var tag_div1 = document.createElement('div');
+	tag_div1.className = 'tag_div';
+	box1.appendChild(tag_div1);
+
+	// Creating name 
+	var  namebox1= document.createElement('h5');
+	namebox1.className = 'tags';
+	var nametext1 = document.createTextNode(pants_array[i].name);
+	// Puts th price inside the tag box
+	tag_div1.appendChild(namebox1);
+	namebox1.appendChild(nametext1);
+
+	// Creating price
+	var pricebox1 = document.createElement('h5');
+	pricebox1.className = 'tags';
+	var pricetext1 = document.createTextNode(pants_array[i].price);
+	// Puts th price inside the tag box
+	tag_div1.appendChild(pricebox1);
+	pricebox1.appendChild(pricetext1);
+
+	// Puts the div of objects onto the page inside div id=shirts
+	pantsid = document.getElementById('pants');
+	pantsid.appendChild(box1);
+};
 
 
 
